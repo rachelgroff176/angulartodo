@@ -1,14 +1,39 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Angulartodo</title>
-  <base href="/">
+<!DOCTYPE html>
+<html>
 
+<head>
+  <base href="/">
+  <title>To Do List</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Angular App">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
+
 <body>
-  <app-root></app-root>
+  <header class="navbar fixed-top navbar-dark bg-primary">
+    <nav class="container">
+      <div>
+        <span class="navbar-brand">To Do List</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <app-root>
+      Loading...
+    </app-root>
+    <br /><br />
+  </main>
+
+  <script src="polyfills.js"></script>
+  <script src="main.js"></script>
+
 </body>
+
 </html>
+
+<!--Some ideas for to do list found here: https://code.tutsplus.com/tutorials/creating-a-grocery-list-manager-using-angular-part-1-add-display-items--cms-28586 -->
