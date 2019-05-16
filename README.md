@@ -1,7 +1,17 @@
-# Angulartodo
+# Angular To Do
 
 This project is a To Do List written in Angular.
 
-The objective for the final product is to be a list that you can sort based on your needs (i.e. priorities, projects needing to get done, objects to buy, etc.). 
+# Requirements
 
-See the deployed project at: https://rachelgroff176-angulartodo.netlify.com/
+* npm
+* git
+
+# How to Run
+
+* `npm install`
+* `npm start`
+
+# Where it is deployed
+
+Find the deployed app on Netlify: https://rachelgroff176-angulartodo.netlify.com/
