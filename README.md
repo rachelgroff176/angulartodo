@@ -12,6 +12,10 @@ This project is a To Do List written in Angular.
 * `npm install`
 * `npm start`
 
+# How to Build
+
+* `npm run build`
+
 # Where it is deployed
 
 Find the deployed app on Netlify: https://rachelgroff176-angulartodo.netlify.com/
