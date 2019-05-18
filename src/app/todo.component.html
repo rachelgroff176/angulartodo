@@ -4,14 +4,30 @@
     <div class="row">
         <div class="col-xs-6 col-md-4">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="tasks to do" id="txtSearch" />
+                <input type="text" class="form-control" placeholder="tasks to do" id="txtSearch" [(ngModel)]="task" />
                 <div class="input-group-btn">
-                    <button class="btn btn-primary" type="button" style="height: 38px; width: 100px">
-                        <span class="glyphicon glyphicon-ok">Submit</span>
+                    <button class="btn btn-primary" (click)="onClick()" type="button" style="height: 38px; width: 100px">
+                        <span>Submit</span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <h2>Tasks to Complete</h2>
+    <ul class="list-group">
+        <li *ngFor="let task of tasks" class="list-group-item">
+            <label class="checkbox-inline">
+                <input type="checkbox">
+            </label>
+                    <span> {{ task.name }} </span>
+                    <span (click)="onEdit(task)" class="fas fa-pencil-alt"></span>
+                    
+        </li>
+    </ul>
+
+
+<h2>Completed Tasks</h2>
+
 
 </div>
