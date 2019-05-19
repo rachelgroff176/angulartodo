@@ -14,20 +14,24 @@
         </div>
     </div>
 
-    <h2>Tasks to Complete</h2>
+    <!--<h2>Tasks to Complete</h2>-->
     <ul class="list-group">
         <li *ngFor="let task of tasks" class="list-group-item">
-            <label class="checkbox-inline">
+            <!--<label class="checkbox-inline">
                 <input type="checkbox">
-            </label>
-                    <span> {{ task.name }} </span>
-                    <span (click)="onEdit(task)" class="fas fa-pencil-alt"></span>
-                    
+            </label>-->
+                    <span (click)="onStrike(task)" [ngClass]="{'strike': task.strike}"> {{ task.name }} </span>
+                    <!--<button class="btn btn-primary" type="button" (click)="onEdit(task)">
+                        <i class="fas fa-pencil-alt"></i>
+                    </button>-->
+                    <button class="btn btn-primary" type="button" (click)="onDelete(task)">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
         </li>
     </ul>
 
 
-<h2>Completed Tasks</h2>
+<!--<h2>Completed Tasks</h2>-->
 
 
 </div>

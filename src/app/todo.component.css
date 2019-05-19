@@ -2,3 +2,11 @@ h2 {
     padding: 15px;
 }
 
+.strike{
+    text-decoration:line-through;
+}
+
+i {
+    float: right;
+    display: inline-block; 
+}
